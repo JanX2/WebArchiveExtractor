@@ -64,3 +64,45 @@ div.spare3,
 div.spare4 {
     display:none;
 }
+
+@keyframes bouncy {
+	0% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	85% {
+		transform: scale(1);
+	}
+	90% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.download {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+	transform: scale(1);
+	animation: bouncy 20s ease-out 5s 3;
+}
+
+.download a,
+.download a:visited,
+.download a:hover,
+.download a:link {
+	background: rgb(125, 140, 140);
+	border-radius: 5px;
+	font-size: 1em;
+	padding: .75em 1em;
+	color: white;
+	margin: 2em;
+	box-shadow: 2px 2px 10px #c0c0c0;
+}
+
+
